@@ -1,0 +1,30 @@
+<div *ngFor="let Post of post" class="container-fluid">
+    <div class="row"><br></div>
+    <div class="row"><br></div>
+    <div class="row">
+        <div class="col-1">
+        </div>
+        <div class="col-4">
+            <h2>{{Post.title}}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <br>
+        <div class="col-1">
+        </div>
+        <div class="col-9">
+            <i>{{Post.datePublished | date}}</i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <br>    
+        </div>
+    </div>
+    <div class="row">
+        <br>
+       <div class="col-1"></div>
+       <div class="col-10">
+           {{Post.content}}
+       </div> 
+</div>
